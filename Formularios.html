@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro al Evento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario de Registro al Evento</h1>
+    <form action="enviar formulario" method="POST">
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre"required><br>
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email"required><br>
+        <label for="telefono">Numero de Telefóno:</label>
+        <input type="tel" id="telefono" name="telefono"><br>
+        <label for="fecha">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" name="fecha nacimiento"><br><br>
+
+        <fieldset>
+            <legend>Genero:</legend>
+            <input type="radio" id="masculino" name="Genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="Femenino" name="Genero" value="femenino">
+            <label for="femenino">Femenino</label><br>  
+            <input type="radio" id="otro" name="Genero" value="otro">
+            <label for="otro">Otro</label><br>  
+        </fieldset>
+        <br>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="mx">Mexico</option>
+            <option value="es">España</option>
+            <option value="ar">Argentina</option>
+            <option value="co">Colombia</option>
+            <option value="pe">Peru</option>         
+        </select>
+        <br>  <br>      
+        <label for="comentario">Comentarios:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br>
+
+        <input type="checkbox" id="terminos" name="terminos"required>
+        <label for="terminos">Acepto los terminos y condiciones</label> <br><br>
+
+        <input type="file" name="adjunto" id="adjunto">
+        <label for="file">Adjuntos</label> <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+
+    </form>
+    
+</body>
+</html>
