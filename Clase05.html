@@ -1,0 +1,40 @@
+HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Layout con Flexbox</title>
+</head>b
+<body>
+  <div class="container">
+    <div class="item">Elemento 1</div>
+    <div class="item">Elemento 2</div>
+    <div class="item">Elemento 3</div>
+  </div>
+</body>
+</html>
+
+<!--- css
+/* Contenedor Flex */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; /* Altura del contenedor */
+  background-color: #f0f0f0;
+}
+
+/* Elementos Flex */
+.item {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  flex-grow: 1; /* Cada elemento crecerá para llenar el espacio disponible */
+}
+
+-->
